@@ -1,0 +1,27 @@
+grumphp:
+  tasks:
+    composer:
+      file: ./composer.json
+      no_check_all: false
+      no_check_lock: false
+      no_check_publish: false
+      no_local_repository: false
+      with_dependencies: false
+      strict: false
+    phpmd:
+      exclude: [ 'vendor/*', 'tests/wordpress/*' ]
+      report_format: 'text'
+      ruleset: [ 'cleancode', 'codesize', 'naming' ]
+      triggered_by: [ 'php' ]
+    jsonlint:
+    phpcs:
+    phplint:
+      exclude: [ 'vendor/' ]
+    phpunit: ~
+    composer_normalize:
+      indent_size: ~
+      indent_style: ~
+      no_update_lock: true
+      verbose: false
+    securitychecker_enlightn:
+      lockfile: ./composer.lock
