@@ -5,32 +5,24 @@ namespace Fool\FoolishPlugin\Api;
 use Exception;
 use Fool\FoolishPlugin\Middleware\LogHandler;
 
+/**
+ * Class Connection
+ *
+ * Handles connection to API, response validation.
+ *
+ * @property string ticker      The company ticker
+ * @property string endpoint    The desired API endpoint
+ * @property string base_url    The base URL for the API
+ * @property mixed  api_key     The API key
+ *
+ * @package Fool\FoolishPlugin\Api
+ */
 class Connection {
-	/**
-	 * @var string
-	 */
-	public string $ticker;
-
-	/**
-	 * @var string
-	 */
-	public string $base_url;
-
-	/**
-	 * @var string
-	 */
-	public string $endpoint;
-
-	/**
-	 * @var string
-	 */
-	private string $api_key;
-
 	/**
 	 * Connection constructor.
 	 *
-	 * @param string $ticker
-	 * @param string $endpoint
+	 * @param string $ticker    The company ticker to pass to the API
+	 * @param string $endpoint  The API endpoint
 	 */
 	public function __construct( string $ticker, string $endpoint ) {
 		$this->ticker   = strtoupper( $ticker );
@@ -40,25 +32,26 @@ class Connection {
 	}
 
 	/**
-	 * Assembles properties into well-formed URL for which to call the API
+	 * Assembles properties into well-formed URL for which to call the API.
 	 *
-	 * @return string
+	 * @return string   The complete URL for the API endpoint.
 	 */
-	protected function makeRequestUrl() {
-		return $this->base_url . $this->endpoint . "/" . $this->ticker . "?apikey=" . $this->api_key;
+	protected function make_request_url() {
+		return $this->base_url . $this->endpoint . '/' . $this->ticker . '?apikey=' . $this->api_key;
 	}
 
 	/**
 	 * Executes cURL request
 	 *
 	 * @return bool|string
+	 *
 	 * @throws Exception
 	 */
-	protected function makeRequest() {
+	protected function make_request() {
 		$curl = curl_init();
 
 		curl_setopt_array( $curl, array(
-			CURLOPT_URL            => $this->makeRequestUrl(),
+			CURLOPT_URL            => $this->make_request_url(),
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING       => '',
 			CURLOPT_MAXREDIRS      => 10,
@@ -74,7 +67,7 @@ class Connection {
 
 		curl_close( $curl );
 
-		return $this->validateRequest( $response, $response_code, $response_error );
+		return $this->validate_request( $response, $response_code, $response_error );
 	}
 
 	/**
@@ -84,29 +77,29 @@ class Connection {
 	 *
 	 * Returns validated response back to calling method.
 	 *
-	 * @param $response
-	 * @param $response_code
-	 * @param $response_error
+	 * @param $response         mixed   cURL response.
+	 * @param $response_code    mixed   cURL HTTP response code.
+	 * @param $response_error   mixed   cURL HTTP response error.
 	 *
 	 * @return mixed
 	 * @throws Exception
 	 */
-	protected function validateRequest( $response, $response_code, $response_error ): mixed {
+	protected function validate_request( $response, $response_code, $response_error ) {
 		if ( $response_error ) {
-			LogHandler::writeToLog( 'cURL Response Error', $response_error, 'error' );
+			LogHandler::write_to_log( 'cURL Response Error', $response_error, 'error' );
 
 			throw new Exception( 'cURL Error: ' . $response_error );
 		} elseif ( $response_code !== 200 ) {
-			LogHandler::writeToLog( 'HTTP Response Code Error', $response_code, 'error' );
+			LogHandler::write_to_log( 'HTTP Response Code Error', $response_code, 'error' );
 
 			throw new Exception( 'Unexpected HTTP Response Code: ' . $response_code );
 		} elseif ( $response == "[ ]" ) {
-			LogHandler::writeToLog( 'Unexpected API Return Value', $response, 'error' );
+			LogHandler::write_to_log( 'Unexpected API Return Value', $response, 'error' );
 
 			throw new Exception( 'Unexpected API Return Value: ' . $response );
 		} elseif ( is_object( json_decode( $response ) ) ) {
 			// API throws errors in the form of a single object (rather than the expected array of objects)
-			LogHandler::writeToLog( 'Unexpected API Return Data Type (object)', $response, 'error' );
+			LogHandler::write_to_log( 'Unexpected API Return Data Type (object)', $response, 'error' );
 
 			throw new Exception( 'Unexpected API Return Data Type (object): ' . $response );
 		}
@@ -115,13 +108,17 @@ class Connection {
 	}
 
 	/**
+	 * Get the response back from the API
+	 *
+	 * Return error message if response throws an exception.
+	 *
 	 * @return string|object
 	 */
-	public function getResponse() {
+	public function get_response() {
 		try {
-			$response = $this->makeRequest();
-		} catch( Exception $e ) {
-			LogHandler::writeToLog( 'Connection Error in getResponse', $e, 'error' );
+			$response = $this->make_request();
+		} catch ( Exception $e ) {
+			LogHandler::write_to_log( 'Connection Error in getResponse', $e, 'error' );
 
 			return "<div class='alert alert-info'>There's been an error fetching this data. Please try again later.</div>";
 		}

@@ -1,5 +1,25 @@
+# https://github.com/phpro/grumphp/tree/master/doc/tasks
+parameters:
+  git_dir: .
+  bin_dir: vendor/bin
 grumphp:
   tasks:
+    phpcs:
+    phplint:
+      exclude: [ 'vendor', 'vendor/*', '/vendor/', '*/vendor/*' ]
+      triggered_by: [ 'php' ]
+    phpunit:
+      config_file: '.phpunit.xml.dist'
+    phpmd:
+      exclude: [ 'vendor/' ]
+      ruleset: [ '.phpmd.xml.dist' ]
+      triggered_by: [ 'php' ]
+    phpparser:
+      ignore_patterns: [ '*/vendor/*' ]
+      visitors:
+        forbidden_function_calls:
+          blacklist: [ 'var_dump' ]
+    jsonlint:
     composer:
       file: ./composer.json
       no_check_all: false
@@ -8,20 +28,14 @@ grumphp:
       no_local_repository: false
       with_dependencies: false
       strict: false
-    phpmd:
-      exclude: [ 'vendor/*', 'tests/wordpress/*' ]
-      report_format: 'text'
-      ruleset: [ 'cleancode', 'codesize', 'naming' ]
-      triggered_by: [ 'php' ]
-    jsonlint:
-    phpcs:
-    phplint:
-      exclude: [ 'vendor/' ]
-    phpunit: ~
     composer_normalize:
-      indent_size: ~
-      indent_style: ~
+      indent_size:
+      indent_style:
       no_update_lock: true
       verbose: false
     securitychecker_enlightn:
       lockfile: ./composer.lock
+    shell:
+      scripts:
+        - [ '-c', './vendor/bin/parallel-lint --exclude .git --exclude vendor .' ]
+        - [ '-c', './vendor/bin/phpmd app/ text .phpmd.xml.dist' ]
