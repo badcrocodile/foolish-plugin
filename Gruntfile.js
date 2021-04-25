@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'foolish',
+				textdomain: 'fool',
 			},
 			update_all_domains: {
 				options: {

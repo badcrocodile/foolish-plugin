@@ -21,14 +21,15 @@ class Connection {
 	/**
 	 * Connection constructor.
 	 *
-	 * @param string $ticker    The company ticker to pass to the API
-	 * @param string $endpoint  The API endpoint
+	 * @param string $ticker   The company ticker to pass to the API.
+	 * @param string $endpoint The API endpoint.
+	 * @param string $api_key
 	 */
-	public function __construct( string $ticker, string $endpoint ) {
+	public function __construct( string $ticker, string $endpoint, string $api_key = '' ) {
 		$this->ticker   = strtoupper( $ticker );
 		$this->endpoint = $endpoint;
 		$this->base_url = 'https://financialmodelingprep.com/api/v3/';
-		$this->api_key  = get_field( 'api_key', 'option' );
+		$this->api_key  = ( get_field( 'api_key', 'option' ) ? get_field( 'api_key', 'option' ) : $api_key);
 	}
 
 	/**
@@ -93,7 +94,7 @@ class Connection {
 			LogHandler::write_to_log( 'HTTP Response Code Error', $response_code, 'error' );
 
 			throw new Exception( 'Unexpected HTTP Response Code: ' . $response_code );
-		} elseif ( $response == "[ ]" ) {
+		} elseif ( $response == '[ ]' ) {
 			LogHandler::write_to_log( 'Unexpected API Return Value', $response, 'error' );
 
 			throw new Exception( 'Unexpected API Return Value: ' . $response );
@@ -117,7 +118,7 @@ class Connection {
 	public function get_response() {
 		try {
 			$response = $this->make_request();
-		} catch ( Exception $e ) {
+		} catch( Exception $e ) {
 			LogHandler::write_to_log( 'Connection Error in getResponse', $e, 'error' );
 
 			return "<div class='alert alert-info'>There's been an error fetching this data. Please try again later.</div>";
