@@ -61,6 +61,7 @@ return array(
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
     'Composer\\XdebugHandler\\' => array($vendorDir . '/composer/xdebug-handler/src'),
+    'Carbon_Fields\\' => array($vendorDir . '/htmlburger/carbon-fields/core'),
     'Amp\\Sync\\' => array($vendorDir . '/amphp/sync/src'),
     'Amp\\Serialization\\' => array($vendorDir . '/amphp/serialization/src'),
     'Amp\\Process\\' => array($vendorDir . '/amphp/process/lib'),

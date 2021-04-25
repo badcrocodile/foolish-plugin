@@ -12,7 +12,8 @@ use Fool\FoolishPlugin\Api\Connection;
  */
 class TestApi extends WP_UnitTestCase {
 
-	public string $profile;
+
+	public object $profile;
 	public string $ticker;
 
 	public function setUp() {

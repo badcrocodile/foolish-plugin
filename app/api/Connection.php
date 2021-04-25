@@ -23,13 +23,13 @@ class Connection {
 	 *
 	 * @param string $ticker   The company ticker to pass to the API.
 	 * @param string $endpoint The API endpoint.
-	 * @param string $api_key
+	 * @param string $api_key  The API key.
 	 */
 	public function __construct( string $ticker, string $endpoint, string $api_key = '' ) {
 		$this->ticker   = strtoupper( $ticker );
 		$this->endpoint = $endpoint;
 		$this->base_url = 'https://financialmodelingprep.com/api/v3/';
-		$this->api_key  = ( get_field( 'api_key', 'option' ) ? get_field( 'api_key', 'option' ) : $api_key);
+		$this->api_key  = ( carbon_get_theme_option( 'fool_api_key' ) ? carbon_get_theme_option( 'fool_api_key' ) : $api_key );
 	}
 
 	/**

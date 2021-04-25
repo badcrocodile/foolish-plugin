@@ -25,3 +25,22 @@ if ( ! defined( 'WPINC' ) ) {
 // Require the autoloader
 require_once 'vendor/autoload.php';
 
+use Carbon_Fields\Carbon_Fields;
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+// Load Carbon Fields directly
+add_action( 'after_setup_theme', 'fool_load_carbon_fields' );
+function fool_load_carbon_fields() {
+	Carbon_Fields::boot();
+}
+
+add_action( 'carbon_fields_register_fields', 'fool_add_plugin_settings_page' );
+function fool_add_plugin_settings_page() {
+	Container::make( 'theme_options', __( 'Foolish Plugin Settings', 'fool' ) )
+		 ->set_page_parent( 'options-general.php' )
+		 ->add_fields( array(
+			 Field::make( 'text', 'fool_api_key', 'API Key' )
+				  ->set_attribute( 'maxLength', 64 ),
+		 ) );
+}

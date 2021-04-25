@@ -1,0 +1,180 @@
+[2021-04-25 1:00:39.850378] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:00:39.852166] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:106
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(72): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(121): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:00:40.416220] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:00:40.418435] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:106
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(72): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(121): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:00:57.416623] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:00:57.417850] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:107
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(73): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(122): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:00:57.957602] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:00:57.960087] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:107
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(73): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(122): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:04:43.119299] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:04:43.122909] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:110
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(76): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(125): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:04:43.784167] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:04:43.786597] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:110
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(76): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(125): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:11:02.554166] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:11:02.555639] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:119
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(134): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:11:03.029782] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:11:03.031254] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:119
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(134): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:11:58.733380] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:11:58.735677] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:11:59.243733] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:11:59.246072] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:12:11.977994] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:12:11.979496] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:12:12.487586] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:12:12.489741] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:12:32.016664] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:12:32.019872] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:12:32.551928] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:12:32.554245] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:13:06.290615] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:13:06.292267] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:13:06.867297] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:13:06.869728] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:120
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(77): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(135): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:13:54.944587] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:13:54.946382] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:105
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(71): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(120): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(18): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}
+[2021-04-25 1:13:55.488090] [error] Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"}
+[2021-04-25 1:13:55.490897] [error] Connection Error in getResponse: Exception: Unexpected API Return Data Type (object): {"Error Message" : "Invalid API KEY. Please retry or visit our documentation to create one FREE https://financialmodelingprep.com/developer/docs"} in /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php:105
+Stack trace:
+#0 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(71): Fool\FoolishPlugin\Api\Connection->validate_request()
+#1 /vagrant/public/wp-content/plugins/foolish-company-data/app/api/Connection.php(120): Fool\FoolishPlugin\Api\Connection->make_request()
+#2 /vagrant/public/wp-content/themes/fool-theme/taxonomy-company.php(19): Fool\FoolishPlugin\Api\Connection->get_response()
+#3 /vagrant/public/wp-includes/template-loader.php(106): include('/vagrant/public...')
+#4 /vagrant/public/wp-blog-header.php(19): require_once('/vagrant/public...')
+#5 /vagrant/public/index.php(17): require('/vagrant/public...')
+#6 {main}

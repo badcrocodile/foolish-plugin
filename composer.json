@@ -2,7 +2,9 @@
   "name": "fool/foolishproject",
   "type": "wordpressplugin",
   "description": "A fun project for Motley Fool",
-  "require": {},
+  "require": {
+    "htmlburger/carbon-fields": "^3.3"
+  },
   "require-dev": {
     "ext-curl": "*",
     "ext-json": "*",
